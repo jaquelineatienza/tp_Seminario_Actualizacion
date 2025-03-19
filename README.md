@@ -22,7 +22,7 @@ Para instalar el proyecto y ponerlo en marcha, sigue estos pasos:
 
 1. Clona el repositorio en tu máquina local:
 
-   ```bash
+   ```
    git clone https://github.com/jaquelineatienza/tp_Seminario_Actualizacion
    ```
 
@@ -31,14 +31,14 @@ Para instalar el proyecto y ponerlo en marcha, sigue estos pasos:
 ## Modo de uso (JS)
 
 ```
-bash
+
    cd javaScript
 ```
 
 - Para poner en uso usar el siguiente comando
 
 ```
-  bash
+
   npm run dev
 
 ```
@@ -46,14 +46,14 @@ bash
 ## Modo de uso (Python)
 
 ```
-bash
+
    cd python
 ```
 
 - Para poner en uso usar el siguiente comando
 
 ```
-  bash
+
   python app.py
 
 ```
