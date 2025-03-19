@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal con Dialog</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <form id="form">
+      <input
+        type="text"
+        name="userInput"
+        id="userInput"
+        placeholder="Escribe un texto"
+        required
+      />
+      <button type="submit">Abrir Modal</button>
+    </form>
+
+    <dialog id="myModal" class="text">
+      <button class="close" onclick="closeModal()">×</button>
+      <p id="modalText"></p>
+      <button id="changeStyleBtn">Cambiar Estilo</button>
+    </dialog>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

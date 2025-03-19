@@ -1,0 +1,18 @@
+.text {
+  background-color: white;
+  text-decoration-color: black;
+}
+
+.text2 {
+  background-color: black;
+  text-decoration-color: white;
+}
+.text3 {
+  background-color: cornflowerblue;
+  text-decoration-color: rgb(185, 1, 1);
+}
+
+#modal {
+  width: 120px;
+  height: 200px;
+}
