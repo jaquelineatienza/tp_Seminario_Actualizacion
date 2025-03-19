@@ -25,3 +25,35 @@ Para instalar el proyecto y ponerlo en marcha, sigue estos pasos:
    ```bash
    git clone https://github.com/jaquelineatienza/tp_Seminario_Actualizacion
    ```
+
+- **NPM I**(en el archivo javaScript) Para descargar las dependencias necesarias para poder ejecutar correctamente el servidor de express
+
+## Modo de uso (JS)
+
+```
+bash
+   cd javaScript
+```
+
+- Para poner en uso usar el siguiente comando
+
+```
+  bash
+  npm run dev
+
+```
+
+## Modo de uso (Python)
+
+```
+bash
+   cd python
+```
+
+- Para poner en uso usar el siguiente comando
+
+```
+  bash
+  python app.py
+
+```
