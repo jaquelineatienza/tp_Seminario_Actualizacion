@@ -6,9 +6,37 @@ const button = document.getElementById("button");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   const texto = document.getElementById("texto").value;
-  modalText.innerText = texto;
-  modal.showModal();
+
+  fetch("http://localhost:3000/post", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ texto }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Error interno al enviar el texto");
+      }
+      return response.json();
+    })
+    .then(() => {
+      return fetch("http://localhost:3000/get", {
+        method: "GET",
+      });
+    })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Error interno al obtener el texto");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      modalText.innerText = data;
+      modal.showModal();
+    });
 });
 
 button.addEventListener("click", () => {
