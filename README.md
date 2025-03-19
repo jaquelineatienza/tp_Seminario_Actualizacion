@@ -2,7 +2,7 @@
 
 ## Simple Site
 
-Este es un proyecto simple para el seminario de actualización, que consiste en un sitio web básico que interactúa tanto con JavaScript (frontend) como con Python (backend).
+Este es un proyecto simple para el seminario de actualización, que consiste en un sitio web básico que interactúa tanto con JavaScript (frontend), express(backend) como con Python (backend).
 
 ## Requisitos para inicializar este proyecto
 
